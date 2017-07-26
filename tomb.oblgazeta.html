@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<!-- saved from url=(0025)http://tomb.oblgazeta.ru/ -->
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Общий ресурс ГУ Редакция газеты "Областная газета"</title>
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+
+	<link rel="stylesheet" href="css/jQueryUI/jquery-ui.min.css">
+	<link rel="stylesheet" href="css/jQueryUI/jquery-ui.structure.min.css">
+	<link rel="stylesheet" href="css/jQueryUI/jquery-ui.theme.min.css">
+
+
+	<link rel="stylesheet" href="css/modifies.css">
+	<link rel="stylesheet" href="css/modifies.media.css">
+
+	<style>
+		body{
+			aaa_width: 980px;
+		}
+		.block{
+								background: #aaffaa;
+			a_display: inline-block;
+			float: left;
+			width: 270px;
+			height: 270px;
+			margin: 10px;
+		}
+		.block-header{
+			background: #ffd000;
+			display: inline-block;
+			position: relative;
+			top: 10px;
+			left: -10px;
+			padding: 0 10px;
+			height: 30px;
+			line-height: 30px;
+		}
+		.block-text{
+			margin-top: 0px;
+			padding: 10px;
+		}
+		.block-header-a{
+			top: 30px;
+			left: 0;
+			width: 10px;
+			height: 10px;
+			position: absolute;
+			background-image: url('img/a.gif');
+			background-repeat: no-repeat;
+		}
+		.tooltip {
+				border-bottom: 1px dotted #0077AA;
+				cursor: help;
+		}
+
+		.tooltip::after {
+				background: rgba(0, 0, 0, 0.8);
+				border-radius: 8px 8px 8px 0px;
+				box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+				color: #FFF;
+				content: attr(data-tooltip); /* Главная часть кода, определяющая содержимое всплывающей подсказки */
+				margin-top: -24px;
+				opacity: 0; /* Наш элемент прозрачен... */
+				padding: 3px 7px;
+				position: absolute;
+				visibility: hidden; /* ...и скрыт. */
+
+				transition: all 0.4s ease-in-out; /* Добавить плавности по вкусу */
+		}
+
+		.tooltip:hover::after {
+				opacity: 1; /* Показываем его */
+				visibility: visible;
+		}
+		
+		p {
+			 margin: 0.5em;
+		}
+	</style>
+
+</head>
+<body>
+
+<!--<header>
+	<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+	  <div class="container">
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle btn-left" data-toggle="collapse" data-target=".navbar-collapse">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+	    </div>
+	    <div class="collapse navbar-collapse">
+	      <ul class="nav navbar-nav">
+	          <li><a href="http://factory.oblgazeta.ru/number/" title="Все номера"><span class=" ">Все номера</span></a></li>
+	          <li><a href="http://factory.oblgazeta.ru/claim/"><span title="Система добавления задач" class="">Таскер</span></a></li>
+	          <li><a href="http://factory.oblgazeta.ru/doc/"><span title="Документооборот" class="">Документооборот</span></a></li>          
+	      </ul>
+
+	    </div>
+	    <div class="ugol"><a href="http://factory.oblgazeta.ru/api/exit/"><span title="Выйти" style="color: #f00;font-size: 20px;" class="glyphicon glyphicon-off"></span></a></div>
+	  </div>
+	</div>
+</header>-->
+
+
+<div class="container">
+
+	<div id="stickers-1" class="stickers">
+		<div id="sticker-1" class="sticker-box ui-state-default" data="1" param="s1" displayed="true">
+			<nav class="sticker sticker-color-1">
+				<div class="wrapper">
+
+					<div class="header">
+						<h2 class="title">Фабрика</h2>
+					</div>
+
+					<section>
+						<ul class="items">
+							<li class="item"><a href="http://factory.oblgazeta.ru/" target="_blank" class="a">Фабрика</a></li>
+							<li class="item"><a href="http://tomb.oblgazeta.ru/static/factory/do_fields_help.pdf" target="_blank" class="a">Инструкция по документообороту</a></li>
+							<li class="item"><a href="http://v.oblgazeta.ru/docs/" target="_blank" class="a">Старый документооборот<br>(только просмотр)</a></li>
+						</ul>
+					</section>
+
+				</div>
+				<span class="note"></span>
+				<img src="img/factory.png" alt="" class="back">
+			</nav>
+		</div>
+
+		<div id="sticker-2" class="sticker-box ui-state-default" data="2" param="s2" displayed="true">
+			<nav class="sticker sticker-color-2">
+				<div class="wrapper">
+
+					<div class="header">
+						<h2 class="title">Вёрстка</h2>
+					</div>
+
+					<section>
+						<ul class="items">
+							<li class="item"><a href="http://v.oblgazeta.ru/" class="a">Индикатор</a></li>
+							<li class="item"><a href="http://g.oblgazeta.ru/" class="a">География номера</a></li>
+							<li class="item"><a href="http://tvprog.oblgazeta.ru/" class="a">Конвертация телепрограммы</a></li>
+						</ul>
+					</section>
+
+				</div>
+				<span class="note"></span>
+				<img src="img/magazine.gif" alt="" class="back">
+			</nav>
+		</div>
+
+		<div id="sticker-3" class="sticker-box ui-state-default" data="3" param="s3" displayed="true">
+			<nav class="sticker sticker-color-3">
+				<div class="wrapper">
+
+					<div class="header">
+						<h2 class="title">Фотобанк</h2>
+					</div>
+
+					<section>
+						<ul class="items">
+							<li class="item"><a href="http://photobank.oblgazeta.ru/" class="a">Фотобанк</a></li>
+							<li class="item"><a href="https://drive.google.com/open?id=1NoOyER8WDx6lfSkyof0WtIxueD9OHcA8-ADeXR5UMMA" target="_blank" class="a">Правила работы в приложении «Фотобанк ОГ»</a></li>
+							<li class="item"><a href="http://f.oblgazeta.ru/" class="a">Фотобанк (старый)</a></li>
+							<li class="item"><a href="http://tomb.oblgazeta.ru/download/%D0%B4%D0%BE%D0%BA%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B/%D0%BF%D1%80%D0%B8%D0%BA%D0%B0%D0%B7_%D1%84%D0%BE%D1%82%D0%BE%D0%B1%D0%B0%D0%BD%D0%BA.pdf" class="a">Приказ о внедрении</a></li>
+						</ul>
+					</section>
+
+				</div>
+				<span class="note"></span>
+				<img src="img/photo.png" alt="" class="back">
+			</nav>
+		</div>
+
+		<div id="sticker-4" class="sticker-box ui-state-default" data="4" param="s4" displayed="true">
+			<nav class="sticker sticker-color-4">
+				<div class="wrapper">
+
+					<div class="header">
+						<h2 class="title">Доступ к почте</h2>
+					</div>
+
+					<section>
+						<ul class="items">
+							<li class="item"><a href="http://mail.oblgazeta.ru/" class="a">mail.oblgazeta.ru</a></li>
+							<li class="item"><a href="http://help.yandex.ru/mail/" class="a">Помощь</a></li>
+							<li class="item"><a href="http://tomb.oblgazeta.ru/static/%D0%A1%D1%85%D0%B5%D0%BC%D0%B0%20%D0%BF%D1%80%D0%BE%D1%85%D0%BE%D0%B6%D0%B4%D0%B5%D0%BD%D0%B8%D1%8F%20%D1%8D%D0%BB%D0%B5%D0%BA%D1%82%D1%80%D0%BE%D0%BD%D0%BD%D0%BE%D0%B9%20%D0%BF%D0%BE%D1%87%D1%82%D1%8B/%D0%A1%D1%85%D0%B5%D0%BC%D0%B0_%D0%BF%D1%80%D0%BE%D1%85%D0%BE%D0%B6%D0%B4%D0%B5%D0%BD%D0%B8%D1%8F_%D1%8D%D0%BB%D0%B5%D0%BA%D1%82%D1%80%D0%BE%D0%BD%D0%BD%D0%BE%D0%B9_%D0%BF%D0%BE%D1%87%D1%82%D1%8B_2017-03-17.pdf" target="_blank" class="a">Схема прохождения электронной почты</a></li>
+						</ul>
+					</section>
+
+				</div>
+				<span class="note"></span>
+				<img src="img/mail.png" alt="" class="back">
+			</nav>
+		</div>
+
+		<div id="sticker-5" class="sticker-box ui-state-default" data="5" param="s5" displayed="true">
+			<nav class="sticker sticker-color-5">
+				<div class="wrapper">
+
+					<div class="header">
+						<h2 class="title">На сайте</h2>
+					</div>
+
+					<section>
+						<ul class="items">
+							<li class="item"><a href="https://www.oblgazeta.ru/newspaper/archive/" class="a">Архив газеты</a></li>
+							<li class="item"><a href="https://www.oblgazeta.ru/" class="a">www.oblgazeta.ru</a></li>
+							<li class="item"><a href="http://pravo.gov66.ru/" class="a">pravo.gov66.ru</a></li>
+							<li class="item"><a href="https://top.mail.ru/rttitle?id=2598920&amp;period=0&amp;date=&amp;" target="_blank" class="a">Топ заголовков ОГ (Mail.ru)</a></li>
+							<li class="item"><a href="https://www.oblgazeta.ru/pressreleases/" class="a">Пресс-релизы</a></li>
+						</ul>
+					</section>
+					<section>
+						<span class="title">Поиск по сайту:</span>
+						<ul class="items">
+							<li class="item"><a href="https://yandex.ru/support/search/query-language/search-context.html" class="a">Морфология и контекст</a></li>
+							<li class="item"><a href="https://yandex.ru/support/search/query-language/search-operators.html" class="a">Документные операторы</a></li>
+						</ul>
+					</section>
+					
+				</div>
+				<span class="note"></span>
+				<img src="img/site.png" alt="" class="back">
+			</nav>
+		</div>
+
+		<div id="sticker-6" class="sticker-box ui-state-default" data="6" param="s6" displayed="true">
+			<nav class="sticker sticker-color-6">
+				<div class="wrapper">
+
+					<div class="header">
+						<h2 class="title">Битрикс</h2>
+					</div>
+
+					<section>
+						<ul class="items">
+							<li class="item"><a href="https://oblgazeta.bitrix24.ru/" class="a">Корпоративный портал</a></li>
+						</ul>
+					</section>
+
+				</div>
+				<span class="note"></span>
+				<img src="img/bitrix.png" alt="" class="back">
+			</nav>
+		</div>
+
+		<div id="sticker-7" class="sticker-box ui-state-default" data="7" param="s7" displayed="true">
+			<nav class="sticker sticker-color-7">
+				<div class="wrapper">
+
+					<div class="header">
+						<h2 class="title">Группы в соцсетях</h2>
+					</div>
+
+					<section>
+						<ul class="items">
+							<li class="item"><a href="https://vk.com/club45669888" class="a">Вконтакте</a></li>
+							<li class="item"><a href="https://www.facebook.com/pages/%D0%9E%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D0%BD%D0%B0%D1%8F-%D0%B3%D0%B0%D0%B7%D0%B5%D1%82%D0%B0-%D0%A1%D0%B2%D0%B5%D1%80%D0%B4%D0%BB%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F-%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C-Oblgazetaru/104523242969190" class="a">facebook</a></li>
+							<li class="item"><a href="https://twitter.com/oblgazetaru" class="a">Twitter</a></li>
+							<li class="item"><a href="http://www.odnoklassniki.ru/group56345288704063" class="a">Одноклассники</a></li>
+							<li class="item"><a href="https://www.instagram.com/oblgazeta/" class="a">Instagram</a></li>
+
+						</ul>
+					</section>
+
+				</div>
+				<span class="note"></span>
+				<img src="img/socials.png" alt="" class="back">
+			</nav>
+		</div>
+
+		<div id="sticker-8" class="sticker-box ui-state-default" data="8" param="s8" displayed="true">
+			<nav class="sticker sticker-color-8">
+				<div class="wrapper">
+
+					<div class="header">
+						<h2 class="title">Контроль</h2>
+					</div>
+
+					<section>
+						<ul class="items">
+							<li class="item"><a href="https://docs.google.com/spreadsheets/d/1ay8G0MWN3wEn6icagVNL3XpYk-X9MCMX8ezwLAhYqvQ/edit?usp=sharing" target="_blank" class="a">Отмеченные материалы</a></li>
+							<li class="item"><a href="http://tomb.oblgazeta.ru/static/control/kuku.pdf" target="_blank" class="a">Положение о&nbsp;нормировании труда творческих работников</a></li>
+							<li class="item"><a href="https://docs.google.com/spreadsheets/d/1tW33Qr4FoiCXQzgekJtcDaliuACbiVqEm93AZhlW6hU/edit?usp=sharing" target="_blank" class="a">Выполнение нормы</a></li>
+							<li class="item"><a href="http://v.oblgazeta.ru/sentlog.html" class="a">Время отправки полос</a></li>
+							<li class="item"><a href="https://drive.google.com/open?id=1p8_ic7qOnmzvSVzq-ln5PQvN_mKE1_KArvjs68vw5zs&amp;authuser=0" class="a">Вёрстка</a></li>
+
+						</ul>
+					</section>
+
+				</div>
+				<span class="note"></span>
+				<img src="img/control.png" alt="" class="back">
+			</nav>
+		</div>
+
+		<div id="sticker-9" class="sticker-box ui-state-default" data="9" param="s9" displayed="true">
+			<nav class="sticker sticker-color-9">
+				<div class="wrapper">
+
+					<div class="header">
+						<h2 class="title">Внутренние документы</h2>
+					</div>
+
+					<section>
+						<ul class="items">
+							<li class="item"><a href="http://tomb.oblgazeta.ru/static/%D0%B7%D0%B0%D1%8F%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F/" class="a">Бланки заявлений</a></li>
+							<li class="item"><a href="http://tomb.oblgazeta.ru/static/%D0%B4%D0%B5%D0%BB%D0%BE%D0%BF%D1%80%D0%BE%D0%B8%D0%B7%D0%B2%D0%BE%D0%B4%D1%81%D1%82%D0%B2%D0%BE/" class="a">Инструкция по делопроизводству</a></li>
+							<li class="item"><a href="https://docs.google.com/spreadsheets/d/1zQCVRJNiW6LMyYcK8MxLJeHxOxgpc57SlfvfeSunP-o/edit?usp=sharing" target="_blank" class="a">Контакты сотрудников</a></li>
+							<li class="item"><a href="https://docs.google.com/spreadsheets/d/1awbgHjVkstFDiNS1UxhNzSzO0rdzMG3pT2r2GTOIe_0/edit#gid=0" target="_blank" class="a">Дни рождения VIP</a></li>
+							<li class="item"><a href="http://tomb.oblgazeta.ru/static/%D0%B8%D1%81%D1%82%D0%BE%D1%87%D0%BD%D0%B8%D0%BA%D0%B8%20%D0%B8%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D0%B8%D0%B8/" target="_blank" class="a">Источники информации</a></li>
+							<li class="item"><a href="http://tomb.oblgazeta.ru/static/di/" class="a">Должностные&nbsp;инструкции</a></li>							
+						</ul>
+					</section>
+
+				</div>
+				<span class="note"></span>
+				<img src="img/docs.png" alt="" class="back">
+			</nav>
+		</div>
+
+		<div id="sticker-10" class="sticker-box ui-state-default" data="10" param="s10" displayed="true">
+			<nav class="sticker sticker-color-10">
+				<div class="wrapper">
+
+					<div class="header">
+						<h2 class="title">Проекты "ОГ"</h2>
+					</div>
+
+					<section>
+						<ul class="items">
+							<li class="item"><a href="https://docs.google.com/spreadsheets/d/1eaCoFW8nuUboet3kx9zpu6V7C4rn_tkXqj_wpfRwPDc/edit#gid=0" target="_blank" class="a">100 монологов о революции</a></li>
+						</ul>
+					</section>
+
+				</div>
+				<span class="note"></span>
+				<img src="img/projects.png" alt="" class="back">
+			</nav>
+		</div>
+	</div>
+	
+	<div class="dragable-menu menu-circle">
+		<div class="wrapper">
+			<div class="settings">
+				<div class="group">
+					<button class="btn-circle item edit menu" title="Задать положение блоков" target=""><i class="glyphicon glyphicon-move"></i></button>
+
+					<div class="group">
+						<button class="btn-circle item confirm btn-back" title="Сохранить"><i class="glyphicon glyphicon-ok"></i></button>
+						<button class="btn-circle item cancel btn-back" title="Отменить"><i class="glyphicon glyphicon-remove"></i></button>
+					</div>	
+				</div>
+				<div class="group">
+					<button class="btn-circle item menu display" title="Изменить список выводимых блоков" target=""><i class="glyphicon glyphicon-list"></i></button>
+
+					<div class="group ">
+						<div class="field">
+							<ul class="blocks">
+								<li class="block sticker-list" param="s1">Фабрика <div class="check">
+									<div class="onoffswitch">
+									    <input type="checkbox" name="" class="onoffswitch-checkbox" id="fabrica" checked>
+									    <label class="onoffswitch-label" for="fabrica" stickerid="1"></label>
+									</div>
+								</div></li>
+								<li class="block sticker-list" param="s2">Вёрстка <div class="check">
+									<div class="onoffswitch">
+									    <input type="checkbox" name="" class="onoffswitch-checkbox" id="makeup" checked>
+									    <label class="onoffswitch-label" for="makeup" stickerid="2"></label>
+									</div>
+								</div></li>
+								<li class="block sticker-list" param="s3">Фотобанк <div class="check">
+									<div class="onoffswitch">
+									    <input type="checkbox" name="" class="onoffswitch-checkbox" id="photobank" checked>
+									    <label class="onoffswitch-label" for="photobank" stickerid="3"></label>
+									</div>
+								</div></li>
+								<li class="block sticker-list" param="s4">Доступ к почте <div class="check">
+									<div class="onoffswitch">
+									    <input type="checkbox" name="" class="onoffswitch-checkbox" id="mail" checked>
+									    <label class="onoffswitch-label" for="mail" stickerid="4"></label>
+									</div>
+								</div></li>
+								<li class="block sticker-list" param="s5">На сайте <div class="check">
+									<div class="onoffswitch">
+									    <input type="checkbox" name="" class="onoffswitch-checkbox" id="site" checked>
+									    <label class="onoffswitch-label" for="site" stickerid="5"></label>
+									</div>
+								</div></li>
+								<li class="block sticker-list" param="s6">Битрикс <div class="check">
+									<div class="onoffswitch">
+									    <input type="checkbox" name="" class="onoffswitch-checkbox" id="bitrix" checked>
+									    <label class="onoffswitch-label" for="bitrix" stickerid="6"></label>
+									</div>
+								</div></li>
+								<li class="block sticker-list" param="s7">Группы в соцсетях <div class="check">
+									<div class="onoffswitch">
+									    <input type="checkbox" name="" class="onoffswitch-checkbox" id="socials" checked>
+									    <label class="onoffswitch-label" for="socials" stickerid="7"></label>
+									</div>
+								</div></li>
+								<li class="block sticker-list" param="s8">Контроль <div class="check">
+									<div class="onoffswitch">
+									    <input type="checkbox" name="" class="onoffswitch-checkbox" id="control" checked>
+									    <label class="onoffswitch-label" for="control" stickerid="8"></label>
+									</div>
+								</div></li>
+								<li class="block sticker-list" param="s9">Внутренние документы <div class="check">
+									<div class="onoffswitch">
+									    <input type="checkbox" name="" class="onoffswitch-checkbox" id="docs" checked>
+									    <label class="onoffswitch-label" for="docs" stickerid="9"></label>
+									</div>
+								</div></li>
+								<li class="block sticker-list" param="s10">Проекты "ОГ" <div class="check">
+									<div class="onoffswitch">
+									    <input type="checkbox" name="" class="onoffswitch-checkbox" id="projects" checked>
+									    <label class="onoffswitch-label" for="projects" stickerid="10"></label>
+									</div>
+								</div></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="group">
+					<button class="btn-circle item reset " title="Сбросить настройки"><i class="glyphicon glyphicon-repeat"></i></button>
+				</div>
+			</div>
+			<button class="btn-circle dragable-menu-btn main-btn" title="Настроить меню" state="close"><i class="glyphicon glyphicon-cog"></i></button>
+		</div>
+	</div>
+	
+</div>
+
+<footer>
+
+</footer>
+
+
+<!-- link ES-Shim-->
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<script src="js/jQueryUI/jquery-ui.min.js"></script>
+<script src="js/jQueryUI/jquery.touchAndPunch.js"></script>
+
+
+<script src="js/main.js"></script>
+
+</body>
+</html>

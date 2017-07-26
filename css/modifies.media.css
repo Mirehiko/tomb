@@ -1,0 +1,28 @@
+@media screen and ( min-width: 0px ) {
+	.ugol {
+		top: 25px;
+		right: 15px;
+	}
+	.stickers {
+		text-align: center;
+		width: auto;
+		margin: 70px auto;
+	}
+}
+@media screen and ( min-width: 768px ) {
+	.ugol {
+		top: 50%;
+	}
+}
+@media screen and ( min-width: 992px ) {
+	.stickers {
+		text-align: left;
+		width: 870px
+	}
+}
+@media screen and ( min-width: 1170px ) {
+	.stickers {
+		width: auto;
+		margin: 70px -15px;
+	}
+}

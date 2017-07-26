@@ -1,0 +1,324 @@
+.container {
+	position: relative;
+}
+.ugol {
+	position: absolute;
+	right: 15px;
+	top: 50%;
+	margin-top: -10px;
+}
+.navbar.navbar-inverse.navbar-fixed-top .nav {
+	margin-left: -15px;
+}
+
+.btn-left {
+	float: left;
+	margin-left: 15px;
+}
+
+
+.stickers {
+	font-size: 0;
+	margin: 0 -15px;
+	margin-top: 100px;
+}
+#stickers-1 {
+	display: none;
+}
+.sticker-box {
+	position: relative;
+    width: 270px;
+    height: 270px;
+    margin: 10px;
+    display: inline-block;
+}
+.sticker {
+	position: absolute;
+	text-align: left;
+    width: 240px;
+    height: 230px;
+    padding: 20px 15px;
+    box-shadow: 1px 4px 18px -3px rgba(0, 0, 0, 0.5);
+    box-sizing: content-box;
+    line-height: 16px;
+    
+}
+.sticker.active {
+	cursor: move;
+}
+.note {
+	position: absolute;
+	display: none;
+	top: 0;
+	right: 0;
+	width: 0;
+	height: 0;
+	border-top: 30px solid #fff; 
+	border-left: 30px solid transparent;
+	background: rgba(0, 0, 0, 0.5);
+}
+
+.sticker:hover,
+.sticker-box.hovered .sticker {
+	transform: skewY(-1deg) scale(1.03);
+	box-shadow: 1px 4px 18px -5px rgba(0, 0, 0, 0.5),
+				inset -1px -1px 30px -5px rgba(0, 0, 0, 0.3);
+}
+
+.sticker:hover .note,
+.sticker-box.hovered .note {
+	display: block;
+	top: -1px;
+	right: 0;
+}
+.sticker-box:hover .back,
+.sticker-box.hovered .back {
+	opacity: 0.1;
+}
+.sticker-box.editing {
+	opacity: 0.7;
+}
+.sticker-box.editing.hovered {
+	opacity: 1;
+}
+
+.sticker * {
+	margin: 0;
+	padding: 0;
+	color: #2b2b2b;
+	font-size: 16px;
+}
+.sticker>.wrapper {
+	width: auto;
+	height: 100%;
+	position: relative;
+	z-index: 5;
+}
+/**/
+	.sticker-color-1 {
+		background: #fef59d;
+	}
+	.sticker-color-2 {
+		background: #FF8673;
+	}
+	.sticker-color-3 {
+		background: #abcdef;
+	}
+	.sticker-color-4 {
+		background: #d3ffcd;
+	}
+	.sticker-color-5 {
+		background: #ddadaf;
+	}
+	.sticker-color-6 {
+		background: #bffcff;
+	}
+	.sticker-color-7 {
+		background: #cfcfcf;
+	}
+	.sticker-color-8 {
+		background: #ffe5b4;
+	}
+	.sticker-color-9 {
+		background: #F0AB52;
+	}
+	.sticker-color-10 {
+		background: #99cc99;
+	}
+
+/**/
+.sticker-box .back {
+	width: 40%;
+	height: 40%;
+	border: none;
+	outline: none;
+	background: transparent;
+	opacity: 0.2;
+	margin: auto;
+	display: inline-block;
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
+	z-index: 0;
+}
+
+.sticker .header>.title {
+	font-size: 14px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #000;
+}
+.sticker .header {
+	padding-bottom: 5px;
+	border-bottom: 1px solid #2b2b2b;
+	margin-bottom: 10px;
+}
+.sticker span.title {
+	font-weight: bold;
+	display: inline-block;
+	margin-bottom: 5px;
+}
+.sticker ul {
+	list-style: none;
+	margin-bottom: 10px;
+	padding-left: 5px;
+}
+.sticker .item {
+	margin-bottom: 5px;
+}
+.sticker .item .a {
+	text-decoration: none;
+	color: #2b2b2b;
+}
+.sticker .item:hover .a {
+	text-decoration: underline;
+	color: #2b2b2b;
+}
+
+
+
+
+.btn-circle {
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+	background: rgba(0, 0, 0, 0.5);
+	color: #fff;
+	vertical-align: middle;
+	text-align: center;
+	line-height: 53px;
+	border: none;
+	outline: 0;
+	font-size: 24px;
+	margin: 0 auto;
+}
+.btn-circle:hover {
+	background: rgba(0, 0, 0, 0.7);
+}
+.settings {
+	display: none;
+}
+.group_hidden {
+	display: none;
+}
+
+.settings .btn-circle {
+	display: inline-block;
+	margin-bottom: 5px;
+	height: 40px;
+	width: 40px;
+	line-height: 43px;
+	font-size: 20px;
+	margin-right: 5px;
+}
+.dragable-menu {
+	position: fixed;
+	bottom: 15px;
+	right: 15px;
+	margin-top: -15px;
+	text-align: center;
+	z-index: 100;
+	width: 100%;
+	max-width: 290px;
+}
+.dragable-menu>.wrapper {
+	position: relative;
+	width: 100%;
+	text-align: right;
+}
+.dragable-menu-btn i {
+	margin-top: -1px;
+}
+.dragable-menu-btn i:before {
+	height: 100%;
+	width: 100%;
+	display: block;
+}
+
+.dragable-menu-btn:hover i {
+	/*transition: 1s;
+	transform: rotate(360deg);*/
+	text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.7);
+}
+
+
+.group {
+	display: none;
+}
+.settings>.group {
+	display: block;
+}
+.group>.field {
+	background: rgba(0, 0, 0, 0.8);
+	max-width: 300px;
+	width: 100%;
+	min-height: 200px;
+	float: right;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	border-radius: 10px;
+	border-bottom-right-radius: 25px;
+}
+.group>.field ul.blocks {
+	text-align: left;
+	padding: 20px 10px 55px;
+	list-style: none;
+	color: #fff;
+	margin: 0;
+}
+.group>.field ul.blocks li.block {
+	background: transparent;
+	display: block;
+	height: auto;
+	width: auto;
+	float: none;
+	margin: 0;
+	padding: 6px 5px;
+	cursor: pointer;
+	position: relative;
+}
+.group>.field ul.blocks li.block:hover {
+	background: rgba(0, 0, 0, 0.5);
+}
+
+
+li.block .check {
+	position: absolute;
+	right: 5px;
+	top: 50%;
+	margin-top: -6px;
+}
+
+.onoffswitch {
+    position: relative; width: 40px;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+.onoffswitch-checkbox {
+    display: none;
+}
+.onoffswitch-label {
+    display: block; overflow: hidden; cursor: pointer;
+    height: 13px; padding: 0; line-height: 13px;
+    border: 2px solid #E3E3E3; border-radius: 13px;
+    background-color: #FFFFFF;
+    transition: background-color 0.3s ease-in;
+}
+.onoffswitch-label:before {
+    content: "";
+    display: block; width: 13px; margin: 0px;
+    background: #FFFFFF;
+    position: absolute; top: 0; bottom: 0;
+    right: 25px;
+    border: 2px solid #E3E3E3; border-radius: 13px;
+    transition: all 0.3s ease-in 0s; 
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label {
+    background-color: #54B300;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label, .onoffswitch-checkbox:checked + .onoffswitch-label:before {
+   border-color: #54B300;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label:before {
+    right: 0px; 
+}
